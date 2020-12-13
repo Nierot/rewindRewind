@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Component } from 'react'
 import styles from '../styles/Home.module.scss'
 import SpotifyAuth from './components/SpotifyAuth'
+import Rewind from './rewind';
 
 export default class Home extends Component {
   
@@ -33,7 +34,7 @@ export default class Home extends Component {
   
         <main className={styles.main}>
           {this.state.loggedIn ?
-          <>oof</>
+          <Rewind />
           :
           <>
             <h1 className="title">

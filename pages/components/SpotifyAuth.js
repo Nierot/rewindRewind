@@ -7,7 +7,7 @@ export default class extends React.Component {
     params.set('client_id', process.env.NEXT_PUBLIC_CLIENT_ID)
     params.set('response_type', 'token')
     params.set('redirect_uri', window.location.protocol + '//' + window.location.host + '/')
-    params.set('scope', '')
+    params.set('scope', 'playlist-read-private user-library-read')
     location.replace(`https://accounts.spotify.com/authorize?${params.toString()}`)
   }
   
