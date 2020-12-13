@@ -1,0 +1,30 @@
+$font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$button-color: #1ED760;
+$border-color: #121212;
+$grey: #E6E6E6;
+$background-color: rgb(58,65,255);
+$background-gradient: linear-gradient(315deg, rgba(58,65,255,1) 0%, rgba(16,0,255,1) 100%);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  background: $background-color;
+  background: $background-gradient;
+  color: $grey;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
